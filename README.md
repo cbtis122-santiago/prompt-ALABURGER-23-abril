@@ -1,4 +1,4 @@
-🏗️ Fase 1: Cimentación (Setup inicial)Creación de la carpeta:Abre tu terminal y ejecuta:Bashmkdir crudclinica
+ Fase 1: Cimentación (Setup inicial)Creación de la carpeta:Abre tu terminal y ejecuta:Bashmkdir crudclinica
 cd crudclinica
 flutter create .
 Configuración de Firebase (Consola):Ve a Firebase Console.Crea un proyecto llamado crud-clinica-antigravity.Activa Cloud Firestore en modo de prueba (test mode).Registra tu app (Android/iOS) y descarga los archivos de configuración (google-services.json).Pro Tip: Usa flutterfire configure para automatizar todo esto.Librerías (El pubspec.yaml de poder):Agrega estas líneas bajo dependencies:YAMLdependencies:
@@ -6,7 +6,7 @@ Configuración de Firebase (Consola):Ve a Firebase Console.Crea un proyecto llam
     sdk: flutter
   firebase_core: ^2.24.2
   cloud_firestore: ^4.14.0
-Luego ejecuta: flutter pub get.🌌 Fase 2: Metodología Antigravity (Agentes y Roles)En el framework Antigravity, no vemos el código como archivos aislados, sino como Agentes con responsabilidades claras.Estructura de AgentesAgenteRolSkill (Habilidad)Data WardenArquitecto de PersistenciaGestión total de Firebase Firestore (CRUD).Interface CraftsmanDiseñador de ExperienciaRenderizado de UI y manejo de formularios.The MessengerGestor de EstadoComunicación fluida entre la base de datos y la vista.Flujo de TrabajoDefinición del Esquema: El Data Warden define los campos (Nombre, Edad, Salario).Implementación de Skills: Se crean las funciones asíncronas para disparar a Firestore.Despliegue de Interfaz: El Interface Craftsman conecta los inputs con los Skills.📁 Fase 3: Estructura de Carpetas "Pro"Así debe verse tu proyecto para que sea escalable:Plaintextcrudclinica/
+Luego ejecuta: flutter pub get. Fase 2: Metodología Antigravity (Agentes y Roles)En el framework Antigravity, no vemos el código como archivos aislados, sino como Agentes con responsabilidades claras.Estructura de AgentesAgenteRolSkill (Habilidad)Data WardenArquitecto de PersistenciaGestión total de Firebase Firestore (CRUD).Interface CraftsmanDiseñador de ExperienciaRenderizado de UI y manejo de formularios.The MessengerGestor de EstadoComunicación fluida entre la base de datos y la vista.Flujo de TrabajoDefinición del Esquema: El Data Warden define los campos (Nombre, Edad, Salario).Implementación de Skills: Se crean las funciones asíncronas para disparar a Firestore.Despliegue de Interfaz: El Interface Craftsman conecta los inputs con los Skills.📁 Fase 3: Estructura de Carpetas "Pro"Así debe verse tu proyecto para que sea escalable:Plaintextcrudclinica/
 ├── lib/
 │   ├── agents/             # Lógica de Antigravity
 │   │   ├── data_warden.dart
